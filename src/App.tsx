@@ -11,6 +11,17 @@ import ContactPage from './pages/ContactPage';
 import FAQPage from './pages/FAQPage';
 import PrivacyPage from './pages/PrivacyPage';
 import DiscoveryCallPage from './pages/DiscoveryCallPage';
+import JobOpportunitiesPage from './pages/JobOpportunitiesPage';
+import MediaPage from './pages/MediaPage';
+import SweetLionheartPage from './pages/SweetLionheartPage';
+import HoopoeSharePage from './pages/HoopoeSharePage';
+import MSAPage from './pages/MSAPage';
+import HowToGetSupportPage from './pages/faq-detailed/HowToGetSupportPage';
+import MinimumCommitmentPeriodPage from './pages/faq-detailed/MinimumCommitmentPeriodPage';
+import EmergenciesOrUrgentRequestsPage from './pages/faq-detailed/EmergenciesOrUrgentRequestsPage';
+import ProjectManagementOutsideScopePage from './pages/faq-detailed/ProjectManagementOutsideScopePage';
+import WhiteLabeledServicesPage from './pages/faq-detailed/WhiteLabeledServicesPage';
+import DiscountsForNonProfitPage from './pages/faq-detailed/DiscountsForNonProfitPage';
 
 function App() {
   return (
@@ -28,6 +39,17 @@ function App() {
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/discovery-call" element={<DiscoveryCallPage />} />
+            <Route path="/jobs" element={<JobOpportunitiesPage />} />
+            <Route path="/media" element={<MediaPage />} />
+            <Route path="/sweet-lionheart" element={<SweetLionheartPage />} />
+            <Route path="/hoopoe-share" element={<HoopoeSharePage />} />
+            <Route path="/msa" element={<MSAPage />} />
+            <Route path="/faq/how-to-get-support" element={<HowToGetSupportPage />} />
+            <Route path="/faq/minimum-commitment-period" element={<MinimumCommitmentPeriodPage />} />
+            <Route path="/faq/emergencies-or-urgent-requests" element={<EmergenciesOrUrgentRequestsPage />} />
+            <Route path="/faq/project-management-outside-scope" element={<ProjectManagementOutsideScopePage />} />
+            <Route path="/faq/white-labeled-services" element={<WhiteLabeledServicesPage />} />
+            <Route path="/faq/discounts-for-non-profit" element={<DiscountsForNonProfitPage />} />
           </Routes>
         </main>
         <Footer />
