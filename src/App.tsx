@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Breadcrumbs from './components/Breadcrumbs';
 import Footer from './components/Footer';
@@ -56,6 +57,8 @@ function App() {
         <Footer />
       </div>
     </Router>
+  )
+}
   )
 }
 
