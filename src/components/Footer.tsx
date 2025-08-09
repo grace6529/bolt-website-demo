@@ -5,7 +5,7 @@ import { Zap, Linkedin, Facebook, Instagram, Youtube, Mail, Clock } from 'lucide
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container-max section-padding">
+      <div className="container-max py-16 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
           <div className="space-y-4">
@@ -80,7 +80,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 px-0">
             <p className="text-gray-400 text-sm">
               © 2025 prettysimpl. All rights reserved. Founded 2015.
             </p>
