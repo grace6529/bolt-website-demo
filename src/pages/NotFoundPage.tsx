@@ -81,7 +81,7 @@ const NotFoundPage = () => {
             <Link to="/contact" className="text-primary-600 hover:text-primary-700 underline">
               contact our support team
             </Link>{' '}
-            and we'll help you find what you're looking for.
+            and we'll help you find what you\'re looking for.
           </p>
         </div>
       </div>
