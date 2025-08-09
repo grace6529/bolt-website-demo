@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
 import Header from './components/Header';
 import Breadcrumbs from './components/Breadcrumbs';
 import Footer from './components/Footer';
@@ -27,39 +26,37 @@ import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
-    <HelmetProvider>
-      <Router>
-        <div className="min-h-screen bg-gray-50">
-          <Header />
-          <Breadcrumbs />
-          <main>
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/services" element={<ServicesPage />} />
-              <Route path="/fractional-services" element={<FractionalServicesPage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="/faq" element={<FAQPage />} />
-              <Route path="/privacy" element={<PrivacyPage />} />
-              <Route path="/discovery-call" element={<DiscoveryCallPage />} />
-              <Route path="/jobs" element={<JobOpportunitiesPage />} />
-              <Route path="/media" element={<MediaPage />} />
-              <Route path="/sweet-lionheart" element={<SweetLionheartPage />} />
-              <Route path="/hoopoe-share" element={<HoopoeSharePage />} />
-              <Route path="/msa" element={<MSAPage />} />
-              <Route path="/faq/how-to-get-support" element={<HowToGetSupportPage />} />
-              <Route path="/faq/minimum-commitment-period" element={<MinimumCommitmentPeriodPage />} />
-              <Route path="/faq/emergencies-or-urgent-requests" element={<EmergenciesOrUrgentRequestsPage />} />
-              <Route path="/faq/project-management-outside-scope" element={<ProjectManagementOutsideScopePage />} />
-              <Route path="/faq/white-labeled-services" element={<WhiteLabeledServicesPage />} />
-              <Route path="/faq/discounts-for-non-profit" element={<DiscountsForNonProfitPage />} />
-              <Route path="*" element={<NotFoundPage />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
-      </Router>
-    </HelmetProvider>
+    <Router>
+      <div className="min-h-screen bg-gray-50">
+        <Header />
+        <Breadcrumbs />
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/fractional-services" element={<FractionalServicesPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/faq" element={<FAQPage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/discovery-call" element={<DiscoveryCallPage />} />
+            <Route path="/jobs" element={<JobOpportunitiesPage />} />
+            <Route path="/media" element={<MediaPage />} />
+            <Route path="/sweet-lionheart" element={<SweetLionheartPage />} />
+            <Route path="/hoopoe-share" element={<HoopoeSharePage />} />
+            <Route path="/msa" element={<MSAPage />} />
+            <Route path="/faq/how-to-get-support" element={<HowToGetSupportPage />} />
+            <Route path="/faq/minimum-commitment-period" element={<MinimumCommitmentPeriodPage />} />
+            <Route path="/faq/emergencies-or-urgent-requests" element={<EmergenciesOrUrgentRequestsPage />} />
+            <Route path="/faq/project-management-outside-scope" element={<ProjectManagementOutsideScopePage />} />
+            <Route path="/faq/white-labeled-services" element={<WhiteLabeledServicesPage />} />
+            <Route path="/faq/discounts-for-non-profit" element={<DiscountsForNonProfitPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
