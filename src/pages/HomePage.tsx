@@ -130,7 +130,7 @@ const HomePage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="card p-8 text-center">
+              <div key={index} className="card-interactive p-8 text-center">
                 <div className="mb-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{service.title}</h3>
                   <div className="text-4xl font-bold text-primary-600 mb-4">{service.price}</div>
@@ -169,7 +169,7 @@ const HomePage = () => {
           
           <div className="flex flex-wrap justify-center items-center gap-8">
             {platforms.map((platform, index) => (
-              <div key={index} className="bg-white px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div key={index} className="bg-white px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:-translate-y-1">
                 <span className="text-lg font-semibold text-gray-800">{platform}</span>
               </div>
             ))}

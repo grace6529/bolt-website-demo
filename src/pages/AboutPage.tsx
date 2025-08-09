@@ -70,7 +70,7 @@ const AboutPage = () => {
             
             <div className="grid grid-cols-2 gap-6">
               {metrics.map((metric, index) => (
-                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
+                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 hover:bg-white/15">
                   <div className="text-primary-200 mb-3 flex justify-center">
                     {metric.icon}
                   </div>
@@ -200,7 +200,7 @@ const AboutPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {platforms.map((platform, index) => (
-              <div key={index} className="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow">
+              <div key={index} className="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-all duration-300 transform hover:scale-[1.02] hover:-translate-y-1">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{platform.name}</h3>
                 <p className="text-gray-600">{platform.description}</p>
               </div>

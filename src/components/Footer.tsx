@@ -28,10 +28,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Services</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><Link to="/fractional-services" className="hover:text-primary-400 transition-colors">Fractional Services</Link></li>
-              <li><Link to="/services" className="hover:text-primary-400 transition-colors">Business Automation</Link></li>
-              <li><Link to="/services" className="hover:text-primary-400 transition-colors">Low-Code Development</Link></li>
-              <li><Link to="/services" className="hover:text-primary-400 transition-colors">Systems Integration</Link></li>
+              <li><Link to="/fractional-services" className="hover:text-primary-400 transition-all duration-200 hover:translate-x-1">Fractional Services</Link></li>
+              <li><Link to="/services" className="hover:text-primary-400 transition-all duration-200 hover:translate-x-1">Business Automation</Link></li>
+              <li><Link to="/services" className="hover:text-primary-400 transition-all duration-200 hover:translate-x-1">Low-Code Development</Link></li>
+              <li><Link to="/services" className="hover:text-primary-400 transition-all duration-200 hover:translate-x-1">Systems Integration</Link></li>
             </ul>
           </div>
 
@@ -39,10 +39,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Company</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><Link to="/about" className="hover:text-primary-400 transition-colors">About Us</Link></li>
-              <li><Link to="/faq" className="hover:text-primary-400 transition-colors">FAQ</Link></li>
-              <li><Link to="/contact" className="hover:text-primary-400 transition-colors">Contact</Link></li>
-              <li><Link to="/privacy" className="hover:text-primary-400 transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/about" className="hover:text-primary-400 transition-all duration-200 hover:translate-x-1">About Us</Link></li>
+              <li><Link to="/faq" className="hover:text-primary-400 transition-all duration-200 hover:translate-x-1">FAQ</Link></li>
+              <li><Link to="/contact" className="hover:text-primary-400 transition-all duration-200 hover:translate-x-1">Contact</Link></li>
+              <li><Link to="/privacy" className="hover:text-primary-400 transition-all duration-200 hover:translate-x-1">Privacy Policy</Link></li>
             </ul>
           </div>
 
@@ -56,19 +56,19 @@ const Footer = () => {
               </div>
               <div className="flex space-x-4">
                 <a href="https://www.linkedin.com/company/prettysim-pl/" target="_blank" rel="noopener noreferrer" 
-                   className="text-gray-400 hover:text-primary-400 transition-colors">
+                   className="text-gray-400 social-icon">
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a href="https://www.facebook.com/itsprettysimpl" target="_blank" rel="noopener noreferrer"
-                   className="text-gray-400 hover:text-primary-400 transition-colors">
+                   className="text-gray-400 social-icon">
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a href="https://www.instagram.com/prettysim.pl/" target="_blank" rel="noopener noreferrer"
-                   className="text-gray-400 hover:text-primary-400 transition-colors">
+                   className="text-gray-400 social-icon">
                   <Instagram className="h-5 w-5" />
                 </a>
                 <a href="https://www.youtube.com/@itsprettysimpl" target="_blank" rel="noopener noreferrer"
-                   className="text-gray-400 hover:text-primary-400 transition-colors">
+                   className="text-gray-400 social-icon">
                   <Youtube className="h-5 w-5" />
                 </a>
               </div>

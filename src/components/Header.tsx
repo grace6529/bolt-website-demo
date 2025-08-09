@@ -22,8 +22,8 @@ const Header = () => {
       <div className="container-max">
         <div className="flex justify-between items-center py-4 lg:py-6">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group">
-            <div className="bg-primary-600 p-2.5 rounded-xl group-hover:bg-primary-700 transition-colors">
+          <Link to="/" className="flex items-center space-x-2 group logo-hover">
+            <div className="bg-primary-600 p-2.5 rounded-xl group-hover:bg-primary-700 transition-all duration-300">
               <Zap className="h-6 w-6 text-white" />
             </div>
             <span className="text-2xl font-bold text-gray-900 tracking-tight">prettysimpl</span>
@@ -35,7 +35,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`font-medium transition-colors hover:text-primary-600 py-2 ${
+                className={`font-medium link-hover py-2 ${
                   isActive(item.href)
                     ? 'text-primary-600'
                     : 'text-gray-700'
@@ -75,7 +75,7 @@ const Header = () => {
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`font-medium transition-colors hover:text-primary-600 ${
+                  className={`font-medium link-hover ${
                     isActive(item.href) ? 'text-primary-600' : 'text-gray-700'
                   }`}
                 >
