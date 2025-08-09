@@ -133,7 +133,7 @@ const HomePage = () => {
               <div key={index} className="card-interactive p-8 text-center">
                 <div className="mb-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{service.title}</h3>
-                  <div className="text-4xl font-bold text-primary-600 mb-4">{service.price}</div>
+                  <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-600 mb-4 break-words">{service.price}</div>
                   <p className="text-gray-600">{service.description}</p>
                 </div>
                 
