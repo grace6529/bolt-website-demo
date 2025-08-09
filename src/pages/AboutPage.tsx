@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Star, Users, Zap, Target, Shield, TrendingUp, ArrowRight, Award, Globe, Clock } from 'lucide-react';
+import SEOHead from '../components/SEOHead';
 
 const AboutPage = () => {
   const metrics = [
@@ -47,6 +48,14 @@ const AboutPage = () => {
 
   return (
     <div>
+      <SEOHead
+        title="About Us - prettysimpl"
+        description="Founded in 2015, prettysimpl has helped 300+ organizations with business automation. 5-star rated team with 10+ years of expertise in low-code platforms."
+        keywords="about prettysimpl, business automation company, low-code experts, founded 2015, South Africa, UK services"
+        canonical="/about"
+        ogTitle="About prettysimpl - Business Automation Experts"
+        ogDescription="Nearly a decade of helping businesses grow through automation. 300+ clients, 1,500+ applications optimized, 5-star rated team."
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white section-padding">
         <div className="container-max">

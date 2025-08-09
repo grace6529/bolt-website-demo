@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Clock, Users, Zap, AlertTriangle, Code, Handshake } from 'lucide-react';
+import SEOHead from '../components/SEOHead';
 
 const ServicesPage = () => {
   const serviceCategories = [
@@ -69,6 +70,14 @@ const ServicesPage = () => {
 
   return (
     <div>
+      <SEOHead
+        title="Automation Services - prettysimpl"
+        description="Comprehensive business automation services from fractional support to project delivery. Flexible engagement models with no minimum commitments."
+        keywords="automation services, fractional services, project management, business process automation, systems integration"
+        canonical="/services"
+        ogTitle="Business Automation Services - prettysimpl"
+        ogDescription="From strategic leadership to hands-on implementation, we offer flexible engagement models to meet your automation needs at every level."
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white">
         <div className="section-padding">

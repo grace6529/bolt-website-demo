@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Clock, Globe, MessageCircle, Phone, ArrowRight, Linkedin, Facebook, Instagram, Youtube } from 'lucide-react';
+import SEOHead from '../components/SEOHead';
 
 const ContactPage = () => {
   const contactMethods = [
@@ -65,6 +66,14 @@ const ContactPage = () => {
 
   return (
     <div>
+      <SEOHead
+        title="Contact Us - prettysimpl"
+        description="Get in touch with our automation experts. Multiple contact channels available with 1 business day response guarantee. Emergency support available."
+        keywords="contact prettysimpl, automation support, business hours, emergency support, consultation"
+        canonical="/contact"
+        ogTitle="Contact prettysimpl - Get Automation Help"
+        ogDescription="Ready to transform your business? Contact our team through email, chat, or phone. 1 business day response guarantee."
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white section-padding">
         <div className="container-max">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Star, Users, Zap, Target, Shield, Clock, CheckCircle } from 'lucide-react';
+import SEOHead from '../components/SEOHead';
 
 const HomePage = () => {
   const services = [
@@ -48,6 +49,14 @@ const HomePage = () => {
 
   return (
     <div>
+      <SEOHead
+        title="prettysimpl - Business Automation & Low-Code Solutions"
+        description="We help businesses grow bigger, stronger and more agile through low-code process automation and systems integration. 300+ happy clients, 5-star rated team."
+        keywords="business automation, low-code development, systems integration, process automation, fractional services, Airtable, Make, Softr"
+        canonical="/"
+        ogTitle="prettysimpl - Transform Your Business with Automation"
+        ogDescription="Join 300+ businesses that have streamlined operations with our automation expertise. No minimum commitment required."
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white">
         <div className="section-padding">
