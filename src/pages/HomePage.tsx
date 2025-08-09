@@ -49,24 +49,25 @@ const HomePage = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white section-padding">
+      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white">
+        <div className="section-padding">
         <div className="container-max">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
                 <div className="flex items-center space-x-2 text-primary-200">
                   <Star className="h-5 w-5 fill-current" />
                   <span className="font-medium">5.0/5 Rating • 300+ Happy Clients</span>
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                <h1 className="text-4xl md:text-6xl font-bold leading-tight text-balance">
                   Business Automation That Actually Works
                 </h1>
-                <p className="text-xl text-primary-100 leading-relaxed">
+                <p className="text-xl text-primary-100 leading-relaxed max-w-2xl">
                   We help your business grow bigger, stronger and more agile through low-code process automation and systems integration.
                 </p>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link to="/discovery-call" className="btn-primary bg-white text-primary-600 hover:bg-gray-100">
                   Book Discovery Call
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -76,7 +77,7 @@ const HomePage = () => {
                 </Link>
               </div>
 
-              <div className="flex items-center space-x-8 text-primary-200">
+              <div className="flex flex-wrap items-center gap-6 text-primary-200 pt-4">
                 <div className="flex items-center space-x-2">
                   <Users className="h-5 w-5" />
                   <span>300+ Clients</span>
@@ -93,9 +94,9 @@ const HomePage = () => {
             </div>
 
             <div className="relative">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                <h3 className="text-2xl font-bold mb-6">Why Choose prettysimpl?</h3>
-                <div className="space-y-4">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 lg:p-10 border border-white/20">
+                <h3 className="text-2xl font-bold mb-8">Why Choose prettysimpl?</h3>
+                <div className="space-y-6">
                   {benefits.map((benefit, index) => (
                     <div key={index} className="flex items-start space-x-3">
                       <div className="bg-primary-500 p-2 rounded-lg">
@@ -111,6 +112,7 @@ const HomePage = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
@@ -129,9 +131,9 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div key={index} className="card p-8 text-center">
-                <div className="mb-6">
+                <div className="mb-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{service.title}</h3>
-                  <div className="text-3xl font-bold text-primary-600 mb-4">{service.price}</div>
+                  <div className="text-4xl font-bold text-primary-600 mb-4">{service.price}</div>
                   <p className="text-gray-600">{service.description}</p>
                 </div>
                 

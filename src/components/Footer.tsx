@@ -4,21 +4,21 @@ import { Zap, Linkedin, Facebook, Instagram, Youtube, Mail, Clock } from 'lucide
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary-900 text-white">
+    <footer className="bg-gray-900 text-white">
       <div className="container-max section-padding">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="bg-primary-600 p-2 rounded-lg">
+              <div className="bg-primary-600 p-2.5 rounded-xl">
                 <Zap className="h-6 w-6 text-white" />
               </div>
-              <span className="text-2xl font-bold">prettysimpl</span>
+              <span className="text-2xl font-bold tracking-tight">prettysimpl</span>
             </div>
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed max-w-sm">
               Helping businesses grow bigger, stronger and more agile through low-code process automation and systems integration.
             </p>
-            <div className="flex items-center space-x-2 text-gray-300">
+            <div className="flex items-center space-x-2 text-gray-400">
               <Clock className="h-4 w-4" />
               <span className="text-sm">Mon-Fri: 9:00-17:00</span>
             </div>
@@ -27,7 +27,7 @@ const Footer = () => {
           {/* Services */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Services</h3>
-            <ul className="space-y-2 text-gray-300">
+            <ul className="space-y-2 text-gray-400">
               <li><Link to="/fractional-services" className="hover:text-primary-400 transition-colors">Fractional Services</Link></li>
               <li><Link to="/services" className="hover:text-primary-400 transition-colors">Business Automation</Link></li>
               <li><Link to="/services" className="hover:text-primary-400 transition-colors">Low-Code Development</Link></li>
@@ -38,7 +38,7 @@ const Footer = () => {
           {/* Company */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Company</h3>
-            <ul className="space-y-2 text-gray-300">
+            <ul className="space-y-2 text-gray-400">
               <li><Link to="/about" className="hover:text-primary-400 transition-colors">About Us</Link></li>
               <li><Link to="/faq" className="hover:text-primary-400 transition-colors">FAQ</Link></li>
               <li><Link to="/contact" className="hover:text-primary-400 transition-colors">Contact</Link></li>
@@ -50,7 +50,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Connect</h3>
             <div className="space-y-3">
-              <div className="flex items-center space-x-2 text-gray-300">
+              <div className="flex items-center space-x-2 text-gray-400">
                 <Mail className="h-4 w-4" />
                 <span className="text-sm">hello@prettysimpl.com</span>
               </div>
@@ -79,7 +79,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-12 pt-8">
+        <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
               © 2025 prettysimpl. All rights reserved. Founded 2015.

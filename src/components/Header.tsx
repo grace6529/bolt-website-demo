@@ -18,26 +18,26 @@ const Header = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
+    <header className="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-gray-100">
       <div className="container-max">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-4 lg:py-6">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="bg-primary-600 p-2 rounded-lg group-hover:bg-primary-700 transition-colors">
+            <div className="bg-primary-600 p-2.5 rounded-xl group-hover:bg-primary-700 transition-colors">
               <Zap className="h-6 w-6 text-white" />
             </div>
-            <span className="text-2xl font-bold text-gray-900">prettysimpl</span>
+            <span className="text-2xl font-bold text-gray-900 tracking-tight">prettysimpl</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden lg:flex space-x-8">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`font-medium transition-colors hover:text-primary-600 ${
+                className={`font-medium transition-colors hover:text-primary-600 py-2 ${
                   isActive(item.href)
-                    ? 'text-primary-600 border-b-2 border-primary-600 pb-1'
+                    ? 'text-primary-600'
                     : 'text-gray-700'
                 }`}
               >
@@ -47,7 +47,7 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Link to="/discovery-call" className="btn-primary">
               Book Discovery Call
             </Link>
@@ -56,7 +56,7 @@ const Header = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
           >
             {isMenuOpen ? (
               <X className="h-6 w-6 text-gray-700" />
@@ -68,7 +68,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-gray-200 py-4">
+          <div className="lg:hidden border-t border-gray-200 py-4">
             <nav className="flex flex-col space-y-4">
               {navigation.map((item) => (
                 <Link

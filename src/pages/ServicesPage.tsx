@@ -70,13 +70,14 @@ const ServicesPage = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white section-padding">
+      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white">
+        <div className="section-padding">
         <div className="container-max">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
               Comprehensive Business Automation Services
             </h1>
-            <p className="text-xl text-primary-100 mb-8">
+            <p className="text-xl text-primary-100 mb-8 max-w-3xl mx-auto">
               From strategic leadership to hands-on implementation, we offer flexible engagement models 
               to meet your automation needs at every level.
             </p>
@@ -85,6 +86,7 @@ const ServicesPage = () => {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </div>
+        </div>
         </div>
       </section>
 
@@ -101,10 +103,10 @@ const ServicesPage = () => {
             </p>
           </div>
 
-          <div className="space-y-12">
+          <div className="space-y-8">
             {serviceCategories.map((category, index) => (
-              <div key={index} className="card p-8">
-                <div className="flex items-start space-x-6">
+              <div key={index} className="card p-8 lg:p-10">
+                <div className="flex flex-col lg:flex-row items-start space-y-6 lg:space-y-0 lg:space-x-8">
                   <div className="bg-primary-100 p-4 rounded-xl">
                     <div className="text-primary-600">
                       {category.icon}
@@ -113,11 +115,11 @@ const ServicesPage = () => {
                   
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">{category.title}</h3>
-                    <p className="text-gray-600 mb-6">{category.description}</p>
+                    <p className="text-lg text-gray-600 mb-6">{category.description}</p>
                     
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
                       {category.services.map((service, idx) => (
-                        <div key={idx} className="bg-gray-50 p-4 rounded-lg">
+                        <div key={idx} className="bg-gray-50 p-5 rounded-lg border border-gray-100">
                           <div className="flex justify-between items-start mb-2">
                             <h4 className="font-semibold text-gray-900">{service.name}</h4>
                             <span className="text-primary-600 font-bold text-sm">{service.price}</span>
