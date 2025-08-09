@@ -79,4 +79,23 @@
   .logo-hover {
     @apply transition-all duration-300 transform hover:scale-105;
   }
+  
+  /* Dropdown animations */
+  .dropdown-enter {
+    @apply opacity-0 transform scale-95 translate-y-1;
+  }
+  
+  .dropdown-enter-active {
+    @apply opacity-100 transform scale-100 translate-y-0 transition-all duration-200 ease-out;
+  }
+  
+  /* Mobile menu improvements */
+  .mobile-menu-item {
+    @apply transition-all duration-200 hover:translate-x-1;
+  }
+  
+  /* Breadcrumb hover effects */
+  .breadcrumb-link {
+    @apply transition-all duration-200 hover:translate-x-0.5;
+  }
 }
